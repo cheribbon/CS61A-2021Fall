@@ -81,7 +81,6 @@ def summation_using_accumulate(n, term):
     >>> summation_using_accumulate(5, triple)
     45
     """
-    "*** YOUR CODE HERE ***"
     return accumulate(add, 0, n, term)
 
 
@@ -93,7 +92,6 @@ def product_using_accumulate(n, term):
     >>> product_using_accumulate(6, triple)
     524880
     """
-    "*** YOUR CODE HERE ***"
     return accumulate(mul, 1, n, term)
 
 
