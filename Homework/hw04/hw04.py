@@ -251,8 +251,7 @@ def preorder(t):
     [2, 4, 6]
     """
     "*** YOUR CODE HERE ***"
-    lst = []
-    lst += [label(t)]
+    lst = [label(t)]
     for b in branches(t):
         lst += preorder(b)
     return lst
