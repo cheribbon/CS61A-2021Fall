@@ -256,6 +256,10 @@ def preorder(t):
         lst += preorder(b)
     return lst
 
+    # Another solution
+    if is_leaf(t):
+        return [label(t)]
+    return sum([preorder(b) for b in branches(t)], [label(t)])
 
 
 def str_interval(x):
