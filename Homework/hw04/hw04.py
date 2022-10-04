@@ -262,6 +262,7 @@ def preorder(t):
     return sum([preorder(b) for b in branches(t)], [label(t)])
 
 
+
 def str_interval(x):
     """Return a string representation of interval x."""
     return '{0} to {1}'.format(lower_bound(x), upper_bound(x))
